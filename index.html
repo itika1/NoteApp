@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url('body.jpg'); max-width: 100%; background-repeat: no-repeat; background-size: auto;">
+    <nav class="navbar navbar-dark bg-dark justify-content-between" style="color: aliceblue;">
+        <a class="navbar-brand">Note360</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="container my-3" style="margin: 0 ; max-width: 100%; background-image: url('note-background.jpg'); background-repeat: no-repeat; background-size: auto;">
+        <h1>Feel free to use your Note360</h1>
+        <div class="card text-white bg-dark mb-3" style="max-width: 45em;  margin: 0 auto;">
+            <div class="card-body">
+                <div class="form-group">
+                    <h5 class="card-title">Add a Title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter title">
+		    <h5 class="card-title">Add a Date</h5>
+                    <input type="date" name="date" id="addDate">
+                </div>
+                <h5 class="card-title">Add a note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add a Note</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>Your saved notes</h1>
+    <hr>
+    <div id="notes" class="row container-fluid" style="background-image: url('saved\ notes.jpg'); background-repeat: repeat; background-size: auto;"></div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
